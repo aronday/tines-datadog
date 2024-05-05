@@ -5,10 +5,14 @@ variable "datadog-aws-role-name" {
   description = "Name of the AWS IAM role to create for the Datadog integration"
 }
 
-variable "datadog_resources" {
-  description = "Boolean to control whether Datadog resources should be created"
-  type        = bool
-  default     = false
+variable "datadog_app_key" {
+  type = string
+  description = "Datadog App Key"
+}
+
+variable "datadog_api_key" {
+  type = string
+  description = "Datadog API Key"
 }
 
 # AWS

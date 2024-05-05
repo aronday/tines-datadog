@@ -1,3 +1,8 @@
+provider "datadog" {
+  api_key = var.datadog_api_key
+  app_key = var.datadog_app_key
+}
+
 provider "aws" {
   region     = var.region
   access_key = var.aws_access_key_id
